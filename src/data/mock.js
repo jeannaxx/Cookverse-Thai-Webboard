@@ -81,8 +81,12 @@ export const sessionDetail = {
 
 export const menus = [
   { id: 'krapow', name: 'ผัดกะเพราไก่', meta: 'วัตถุดิบ 8 ชนิด · 8 ขั้น', status: 'เปิดใช้ในเกม', live: true, missionId: 'mission_krapow_chicken_01' },
-  { id: 'menu2', name: '[เมนูที่ 2]', meta: 'รอยืนยันกับอาจารย์', status: 'ฉบับร่าง', live: false, missionId: '—' },
-  { id: 'menu3', name: '[เมนูที่ 3]', meta: 'รอยืนยันกับอาจารย์', status: 'ฉบับร่าง', live: false, missionId: '—' },
+  { id: 'mango_sticky_rice', name: 'ข้าวเหนียวมะม่วง', meta: 'รอยืนยันสูตรกับอาจารย์', status: 'ฉบับร่าง', live: false, missionId: '—' },
+  { id: 'tom_yum_goong', name: 'ต้มยำกุ้ง', meta: 'รอยืนยันสูตรกับอาจารย์', status: 'ฉบับร่าง', live: false, missionId: '—' },
+  { id: 'pad_thai', name: 'ผัดไทย', meta: 'รอยืนยันสูตรกับอาจารย์', status: 'ฉบับร่าง', live: false, missionId: '—' },
+  { id: 'som_tam_thai', name: 'ส้มตำไทย', meta: 'รอยืนยันสูตรกับอาจารย์', status: 'ฉบับร่าง', live: false, missionId: '—' },
+  { id: 'kai_jeow', name: 'ข้าวไข่เจียว', meta: 'รอยืนยันสูตรกับอาจารย์', status: 'ฉบับร่าง', live: false, missionId: '—' },
+  { id: 'massaman_chicken', name: 'แกงมัสมั่นไก่', meta: 'รอยืนยันสูตรกับอาจารย์', status: 'ฉบับร่าง', live: false, missionId: '—' },
 ];
 
 export const ingredientsByMenu = {
@@ -96,8 +100,12 @@ export const ingredientsByMenu = {
     { name: 'น้ำปลา', id: 'fish_sauce', qty: '1 Portion', src: 'ชั้นเครื่องปรุง' },
     { name: 'น้ำตาล', id: 'sugar', qty: '1 Portion', src: 'ชั้นเครื่องปรุง' },
   ],
-  menu2: [],
-  menu3: [],
+  mango_sticky_rice: [],
+  tom_yum_goong: [],
+  pad_thai: [],
+  som_tam_thai: [],
+  kai_jeow: [],
+  massaman_chicken: [],
 };
 
 export const rubricWeights = [
