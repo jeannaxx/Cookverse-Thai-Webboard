@@ -31,7 +31,7 @@ export default function Login() {
         </div>
         <label className="field">
           อีเมล
-          <input type="email" placeholder="name@school.ac.th" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="username" />
+          <input type="email" placeholder="name@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="username" />
         </label>
         <div className="field">
           <div className="field-row">

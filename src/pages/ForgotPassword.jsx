@@ -50,7 +50,7 @@ export default function ForgotPassword() {
             </div>
             <label className="field">
               อีเมล
-              <input type="email" placeholder="name@school.ac.th" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" autoFocus />
+              <input type="email" placeholder="name@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" autoFocus />
             </label>
             {error && <div className="error" role="alert">{error}</div>}
             <button type="submit" className="btn">ส่งลิงก์ตั้งรหัสผ่าน</button>

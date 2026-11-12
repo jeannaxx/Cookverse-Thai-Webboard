@@ -80,7 +80,7 @@ export default function InviteDialog({ open, onClose, onInvite, existingEmails }
           </label>
           <label className="field">
             อีเมล
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="name@school.ac.th" />
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="name@gmail.com" />
           </label>
           <fieldset className="field role-pick">
             <legend>สิทธิ์</legend>
