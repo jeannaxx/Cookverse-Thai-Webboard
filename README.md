@@ -32,7 +32,7 @@ src/
 ## Deploy (GitHub Pages)
 
 push ขึ้น `main` แล้ว GitHub Actions จะ build และขึ้นเว็บให้อัตโนมัติ (`.github/workflows/deploy.yml`)
-ดูเว็บได้ที่ https://jeannaxx.github.io/Cookverse-Webboard/
+ดูเว็บได้ที่ https://jeannaxx.github.io/Cookverse-Thai-Webboard/
 
 ## เกม Unity
 
