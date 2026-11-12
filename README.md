@@ -33,16 +33,15 @@ src/
 
 มี `netlify.toml` แล้ว: build = `npm run build`, publish = `dist` และ redirect ทุก path ไป `index.html`
 
-## โฟลเดอร์และ branch (สำคัญ)
+## Deploy (GitHub Pages)
 
-| | โฟลเดอร์บนเครื่อง | branch | GitHub Desktop |
-|---|---|---|---|
-| เกม Unity (M1/M5) | `~/Documents/UnityProjects/Cookverse-Thai` | `feature/gameplay-content-ui` | `Cookverse-Thai-Unity` |
-| เว็บ (WB/AI) | `~/Documents/UnityProjects/Cookverse-Thai-Web` | `feature/web` | `Cookverse-Thai-Web` |
+push ขึ้น `main` แล้ว GitHub Actions จะ build และขึ้นเว็บให้อัตโนมัติ (`.github/workflows/deploy.yml`)
+ดูเว็บได้ที่ https://jeannaxx.github.io/Cookverse-Webboard/
 
-- สลับงานด้วยการ **สลับ Repository** ใน GitHub Desktop — **ห้ามสลับ Branch** ในโฟลเดอร์ใด (ฉาก Unity จะย้อนเป็นเวอร์ชันเก่า)
-- โฟลเดอร์เว็บดึงเฉพาะ `webboard/` และ `Docs/` (sparse checkout) · ไฟล์ Unity บน branch นี้เป็นของเดิมจาก `develop` ห้ามลบ (ตอน merge กลับจะลบโปรเจกต์ Unity)
-- งาน AI/หลังบ้านจะอยู่ใน `webboard/netlify/functions/` (`/api/sessions`, `/api/ai/evaluate`, `/api/ai/aunt`, `/api/ai/menu`)
+## เกม Unity
+
+ตัวเกมอยู่อีก repo: [jeannaxx/Cookverse-Thai](https://github.com/jeannaxx/Cookverse-Thai) · เอกสารรูปแบบข้อมูล session / action log ที่เกมส่งมาอยู่ใน `Docs/` ของ repo นั้น
+งาน AI/หลังบ้านในอนาคตจะอยู่ใน `netlify/functions/` (`/api/sessions`, `/api/ai/evaluate`, `/api/ai/aunt`, `/api/ai/menu`)
 
 ## กติกาความปลอดภัย
 
