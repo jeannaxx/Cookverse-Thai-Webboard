@@ -1,9 +1,0 @@
-[build]
-  command = "npm run build"
-  publish = "dist"
-
-# ให้ทุก path เปิด index.html (React Router)
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200

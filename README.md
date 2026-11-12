@@ -29,10 +29,6 @@ src/
 - ต่อ Supabase (Auth + ตาราง players / sessions / action_logs / results / menus / users)
 - ปุ่ม "เพิ่มเมนู" "เชิญผู้ใช้" และ "บันทึก" ความเห็นผู้สอน ยังไม่ส่งข้อมูลขึ้นระบบ
 
-## Deploy (Netlify)
-
-มี `netlify.toml` แล้ว: build = `npm run build`, publish = `dist` และ redirect ทุก path ไป `index.html`
-
 ## Deploy (GitHub Pages)
 
 push ขึ้น `main` แล้ว GitHub Actions จะ build และขึ้นเว็บให้อัตโนมัติ (`.github/workflows/deploy.yml`)
@@ -41,10 +37,10 @@ push ขึ้น `main` แล้ว GitHub Actions จะ build และข�
 ## เกม Unity
 
 ตัวเกมอยู่อีก repo: [jeannaxx/Cookverse-Thai](https://github.com/jeannaxx/Cookverse-Thai) · เอกสารรูปแบบข้อมูล session / action log ที่เกมส่งมาอยู่ใน `Docs/` ของ repo นั้น
-งาน AI/หลังบ้านในอนาคตจะอยู่ใน `netlify/functions/` (`/api/sessions`, `/api/ai/evaluate`, `/api/ai/aunt`, `/api/ai/menu`)
+หลังบ้านใช้ Supabase (ตาราง + Auth) งานที่ต้องใช้ key ลับ เช่น เชิญผู้ใช้ หรือเรียก Gemini จะอยู่ใน Supabase Edge Functions
 
 ## กติกาความปลอดภัย
 
-- `GEMINI_API_KEY`, `SUPABASE_SERVICE_ROLE_KEY` เก็บใน Environment Variables ของ Netlify เท่านั้น
+- `GEMINI_API_KEY`, `SUPABASE_SERVICE_ROLE_KEY` เก็บใน Secrets ของ Supabase Edge Functions เท่านั้น ห้ามอยู่ในหน้าเว็บ
 - ห้ามใส่ key ในโค้ด ในเกม Unity ในแชท หรือ commit (`.env` ถูก ignore ไว้แล้ว)
 - เกมต้องเล่นจบได้เสมอแม้หลังบ้านหรือ AI ล่ม (ส่งไม่สำเร็จ → เก็บในเครื่องแล้วส่งซ้ำ)
