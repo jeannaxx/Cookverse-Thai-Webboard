@@ -555,3 +555,57 @@ input[readonly] { background: var(--raised); color: var(--text-2); }
 .role-option input { min-height: 0; margin: 3px 0 0; accent-color: var(--accent); }
 .role-option > span { display: flex; flex-direction: column; }
 .role-name { font-size: 15px; color: var(--text); font-weight: 500; }
+
+/* ---------- Leaderboard ---------- */
+.podium-card { padding-bottom: 0; overflow: hidden; }
+.podium {
+  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: end; gap: 8px; max-width: 760px; margin: 0 auto; padding-top: 8px;
+}
+.podium-col { display: flex; flex-direction: column; align-items: stretch; min-width: 0; }
+.podium-person {
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  padding: 0 4px 12px; text-align: center; min-width: 0;
+}
+.podium-avatar {
+  width: 44px; height: 44px; border-radius: 50%; margin-bottom: 6px;
+  display: grid; place-items: center;
+  background: var(--raised); color: var(--text-2);
+  font-family: var(--font-display); font-weight: 500; font-size: 17px;
+}
+.podium-name {
+  font-weight: 500; max-width: 100%;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.podium-score { font-size: 24px; line-height: 1.2; }
+.podium-step {
+  display: flex; justify-content: center; padding-top: 12px;
+  background: var(--nav); color: var(--nav-strong);
+  border-radius: 10px 10px 0 0;
+}
+.podium-rank { font-size: 26px; line-height: 1; }
+
+.rank-1 .podium-step { height: 168px; background: var(--accent); color: #fff; }
+.rank-2 .podium-step { height: 132px; }
+.rank-3 .podium-step { height: 108px; }
+.rank-4 .podium-step { height: 84px; background: var(--nav-raised); }
+.rank-5 .podium-step { height: 68px; background: var(--nav-raised); }
+
+.rank-1 .podium-avatar { width: 56px; height: 56px; font-size: 21px; background: var(--accent-soft); color: var(--accent-ink); }
+.rank-1 .podium-score { font-size: 30px; color: var(--accent-ink); }
+
+@media (max-width: 560px) {
+  .podium { gap: 4px; }
+  .podium-avatar { width: 34px; height: 34px; font-size: 14px; }
+  .rank-1 .podium-avatar { width: 42px; height: 42px; font-size: 17px; }
+  .podium-name { font-size: 12px; }
+  .podium-score { font-size: 18px; }
+  .rank-1 .podium-score { font-size: 22px; }
+  .podium-person .small { font-size: 11px; }
+  .podium-rank { font-size: 20px; }
+  .rank-1 .podium-step { height: 128px; }
+  .rank-2 .podium-step { height: 100px; }
+  .rank-3 .podium-step { height: 82px; }
+  .rank-4 .podium-step { height: 64px; }
+  .rank-5 .podium-step { height: 52px; }
+}

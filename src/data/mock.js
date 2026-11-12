@@ -122,3 +122,18 @@ export const users = [
   { name: '[ชื่อแอดมิน]', email: '[อีเมลแอดมิน]', role: 'แอดมิน', status: 'ใช้งาน' },
   { name: 'ผู้เล่น A', email: '—', role: 'ผู้เล่น', status: 'ใช้งาน' },
 ];
+
+// อันดับผู้เล่น — คะแนนดีที่สุดของแต่ละคน (เรียงคะแนนมากไปน้อย ถ้าเท่ากันใช้เวลาน้อยกว่า)
+// bestTime เป็นวินาที
+export const leaderboard = [
+  { player: 'ผู้เล่น B', best: 92, bestTime: 555, rounds: 3 },
+  { player: 'ผู้เล่น A', best: 85, bestTime: 603, rounds: 4 },
+  { player: 'ผู้เล่น F', best: 85, bestTime: 642, rounds: 2 },
+  { player: 'ผู้เล่น G', best: 81, bestTime: 700, rounds: 3 },
+  { player: 'ผู้เล่น H', best: 78, bestTime: 688, rounds: 1 },
+  { player: 'ผู้เล่น E', best: 71, bestTime: 831, rounds: 2 },
+  { player: 'ผู้เล่น I', best: 69, bestTime: 745, rounds: 2 },
+  { player: 'ผู้เล่น D', best: 64, bestTime: 688, rounds: 3 },
+  { player: 'ผู้เล่น J', best: 58, bestTime: 902, rounds: 1 },
+  { player: 'ผู้เล่น C', best: 41, bestTime: 902, rounds: 2 },
+];
