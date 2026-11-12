@@ -37,6 +37,10 @@ export const IconPlus = (p) => (
 export const IconCheck = (p) => (
   <Icon {...p}><path d="M5 12.5l4.5 4.5L19 7.5" /></Icon>
 );
+// แท่นรางวัล 2 · 1 · 3 มีถ้วยรางวัลบนแท่นกลาง
 export const IconTrophy = (p) => (
-  <Icon {...p}><path d="M8 4h8v5a4 4 0 0 1-8 0z" /><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4" /><path d="M12 13v4M8.5 20h7M10 17h4v3h-4z" /></Icon>
+  <Icon {...p}>
+    <path d="M9.5 3h5v2.5a2.5 2.5 0 0 1-5 0z" /><path d="M12 8v2.5M10.5 10.5h3" />
+    <path d="M9 21v-7.5h6V21" /><path d="M3 21v-4.5h6M15 18h6v3" /><path d="M2 21h20" />
+  </Icon>
 );

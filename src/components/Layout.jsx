@@ -6,8 +6,8 @@ import { IconLogout, IconMenus, IconOverview, IconSessions, IconTrophy, IconUser
 const links = [
   { to: '/', label: 'ภาพรวม', end: true, icon: IconOverview },
   { to: '/sessions', label: 'รอบการเล่น', icon: IconSessions },
-  { to: '/leaderboard', label: 'อันดับผู้เล่น', icon: IconTrophy },
   { to: '/menus', label: 'เมนูอาหาร', icon: IconMenus },
+  { to: '/leaderboard', label: 'อันดับผู้เล่น', icon: IconTrophy },
   { to: '/menus#users', label: 'ผู้ใช้และสิทธิ์', adminOnly: true, icon: IconUsers },
 ];
 
